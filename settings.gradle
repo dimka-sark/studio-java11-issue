@@ -1,0 +1,19 @@
+pluginManagement {
+  repositories {
+    google()
+    mavenCentral()
+    gradlePluginPortal()
+  }
+}
+dependencyResolutionManagement {
+  repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+  repositories {
+    google()
+    mavenCentral()
+  }
+}
+rootProject.name = "Java11NamespaceIssue"
+include ':app'
+include ':module_with_issue'
+include ':module_without_issue_1_8'
+include ':module_without_issue_package'
